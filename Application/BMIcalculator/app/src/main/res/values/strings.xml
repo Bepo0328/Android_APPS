@@ -1,3 +1,18 @@
 <resources>
+    <!-- all -->
     <string name="app_name">BMIcalculator</string>
+    <string name="bmi_calculator">BMI 계산기</string>
+
+    <!-- activity main -->
+    <string name="activity_main_height">키(cm)</string>
+    <string name="activity_main_weight">몸무게(kg)</string>
+    <string name="activity_main_age">나이(세)</string>
+    <string name="activity_main_result">확인하기</string>
+    <string name="activity_main_gender">성별</string>
+    <string name="activity_main_male">남성</string>
+    <string name="activity_main_female">여성</string>
+
+    <!-- activity result -->
+    <string name="activity_result_bmi">BMI :</string>
+    <string name="activity_result_result">결과 :</string>
 </resources>
