@@ -1,0 +1,11 @@
+<resources>
+    <!-- all -->
+    <string name="app_name">LottoNumberGenerator</string>
+
+    <!-- activity main -->
+    <string name="activity_main_logo">로또 번호 생성기</string>
+    <string name="activity_main_number_add">번호 추가하기</string>
+    <string name="activity_main_number_clear">초기화</string>
+    <string name="activity_main_run">자동 생성 시작</string>
+
+</resources>
