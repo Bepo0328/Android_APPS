@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         findViewById(R.id.activity_main_btn_number_add)
     }
 
-    private val btnNubmerClear: Button by lazy {
+    private val btnNumberClear: Button by lazy {
         findViewById(R.id.activity_main_btn_number_clear)
     }
 
@@ -96,7 +96,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initClearButton() {
-        btnNubmerClear.setOnClickListener {
+        btnNumberClear.setOnClickListener {
             pickNumberSet.clear()
             numberTextViewList.forEach {
                 it.isVisible = false

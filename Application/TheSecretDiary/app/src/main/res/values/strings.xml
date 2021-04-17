@@ -1,0 +1,9 @@
+<resources>
+    <!-- all -->
+    <string name="app_name">TheSecretDiary</string>
+
+    <!-- activity main -->
+    <string name="logo">The Secret Diary</string>
+    <string name="input_text">내용을 입력하세요.</string>
+
+</resources>
