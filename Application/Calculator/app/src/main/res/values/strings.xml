@@ -1,0 +1,32 @@
+<resources>
+    <!-- all -->
+    <string name="app_name">Calculator</string>
+
+    <!-- activity main -->
+    <string name="activity_main_zero">０</string>
+    <string name="activity_main_one">１</string>
+    <string name="activity_main_two">２</string>
+    <string name="activity_main_three">３</string>
+    <string name="activity_main_four">４</string>
+    <string name="activity_main_five">５</string>
+    <string name="activity_main_six">６</string>
+    <string name="activity_main_seven">７</string>
+    <string name="activity_main_eight">８</string>
+    <string name="activity_main_nine">９</string>
+    <string name="activity_main_period">.</string>
+    <string name="activity_main_clear">Ｃ</string>
+    <string name="activity_main_parentheses">（ ）</string>
+    <string name="activity_main_percent">％</string>
+    <string name="activity_main_divide">÷</string>
+    <string name="activity_main_multiply">×</string>
+    <string name="activity_main_subtract">－</string>
+    <string name="activity_main_add">＋</string>
+    <string name="activity_main_result">＝</string>
+    <string name="activity_main_close">닫기</string>
+    <string name="activity_main_history_clear">계산기록 삭제</string>
+
+    <!-- MainActivity.kr
+    Do not concatenate text displayed with setText. Use resource string with placeholders
+    <string name="activity_main_result2">= %1$s</string>
+    -->
+</resources>
