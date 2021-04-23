@@ -1,0 +1,39 @@
+package kr.co.bepo.voicerecorder
+
+import android.content.Context
+import android.util.AttributeSet
+import androidx.appcompat.widget.AppCompatImageButton
+import kr.co.bepo.voicerecorder.State.*
+
+class RecordButton (
+    context: Context,
+    attrs: AttributeSet
+): AppCompatImageButton(context, attrs) {
+
+    init {
+        setBackgroundResource(R.drawable.shape_oval_button)
+    }
+
+    fun updateIconWithState(state: State) {
+        when (state) {
+
+            BEFORE_RECORDING -> {
+                setImageResource(R.drawable.ic_record)
+            }
+
+            ON_RECORDING -> {
+                setImageResource(R.drawable.ic_stop)
+            }
+
+            AFTER_RECORDING -> {
+                setImageResource(R.drawable.ic_play)
+            }
+
+            ON_PLAYING -> {
+                setImageResource(R.drawable.ic_stop)
+            }
+        }
+
+    }
+
+}
