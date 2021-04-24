@@ -13,10 +13,11 @@
     <color name="colorPrimaryDark">#FFFF7043</color>
     <color name="colorAccent">#FFFFAB40</color>
     <color name="colorGray">#FF8C8C8C</color>
-    <color name="colorPrimaryBackground">#FF0886C7</color>
-    <color name="colorFormBackground">#FFE4E4E4</color>
-    <color name="gray">#FFBDBDBD</color>
-    <color name="grayLight">#FFEFEFEF</color>
-    <color name="grayDark">#FF212121</color>
+    <color name="colorPrimaryBackground">#FF0886c7</color>
+    <color name="colorFormBackground">#FFe4e4e4</color>
+    <color name="gray">#FFbdbdbd</color>
+    <color name="grayLight">#FFcfcfcf</color>
+    <color name="grayDark">#FF707070</color>
+    <color name="transparent">#00000000</color>
 
 </resources>
