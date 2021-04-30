@@ -9,14 +9,19 @@
     <color name="white">#FFFFFFFF</color>
 
     <!-- Custom Color -->
-    <color name="colorPrimary">#FFFFC107</color>
-    <color name="colorPrimaryDark">#FFFF7043</color>
-    <color name="colorAccent">#FFFFAB40</color>
+    <color name="colorPrimary">#FFEDEDED</color>
+    <color name="colorPrimaryDark">#FFE1E1E1</color>
+    <color name="colorAccent">#FFFF4081</color>
     <color name="colorGray">#FF8C8C8C</color>
+    <color name="colorLightGray">#FFF1F1F1</color>
+    <color name="colorDarkGray">#FF212121</color>
     <color name="colorPrimaryBackground">#FF0886C7</color>
     <color name="colorFormBackground">#FFE4E4E4</color>
-    <color name="gray">#FFBDBDBD</color>
-    <color name="grayLight">#FFEFEFEF</color>
-    <color name="grayDark">#FF212121</color>
-
+    <color name="colorWhite">#FFFFFFFF</color>
+    <color name="colorDivision">#FFE0E0E0</color>
+    <color name="colorNavIcon">#FF1D1D1D</color>
+    <color name="colorGoogleSignIn">#FFD34836</color>
+    <color name="colorGoogleSignInPressed">#FFB02513</color>
+    <color name="colorEmailSignIn">#FF009688</color>
+    <color name="colorEmailSignInPressed">#FF004D40</color>
 </resources>

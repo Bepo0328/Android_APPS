@@ -22,4 +22,13 @@
         <item name="fontFamily">@font/blackhansansregular</item>
     </style>
 
+    <style name="ButtonStyle" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/colorWhite</item>
+    </style>
+
+    <style name="CustomTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">@color/colorGray</item>
+        <item name="hintTextColor">@color/colorGray</item>
+    </style>
+
 </resources>
