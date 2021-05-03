@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/coverImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/background_gray_stroke_radius_16"
+        android:contentDescription="@string/app_name"
+        android:padding="8dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/coverImageView"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="이게 진짜 안드로이드 마케팅이다" />
+
+    <TextView
+        android:id="@+id/descriptionTextView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/titleTextView"
+        app:layout_constraintTop_toBottomOf="@id/titleTextView"
+        tools:text="앱 사업이 새로운 패러다임을 만들어 가고 있는 요즘 #34이게 진짜 안드로이드 마케팅이다#34는 학생, 앱 마케터, 앱 기획자, 앱 개발자, 앱 사업가 등, 분야를 막론하고 안드로이드 앱 사업에 관심이 있고 관련된 이들이라면 반드시 먼저 읽어 봐야 할 필독서라 하겠다. 저자는 업계에서 보기 드문 개발자 출신의 경영 전공 사업가로서 이론뿐만 아니라 실제 웹과 앱 방면의 다양한 사업을 두루 섭렵하며 쌓은 내공과 혜안으로 안드로이드 마켓 역시 꿰뚫으며 특유의 위트로 읽기 쉽고 이해하기 쉽게 앱 사업 전 영역을 파헤쳐냈다. 사업 계획서와 앱 개발 능력만으로 시장에 뛰어들기에는 이미 너무나 많은 훌륭한 앱들이 넘쳐나고 있다. 이런 불안한 현실에서 성공의 열쇠는 제품 전략, 콘텐츠 전략, 마케팅 전략 이 세 가지가 완전히 유.." />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
