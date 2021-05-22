@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Mytube.MytubeActivity">
+
+
+    <TextView
+        android:drawableStart="@drawable/drawable_youtube_custom"
+        android:text="@string/my_tube"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:padding="8dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:background="@android:color/holo_red_light"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/myTubeRecyclerView"
+        android:layout_width="match_parent"
+        android:padding="16dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

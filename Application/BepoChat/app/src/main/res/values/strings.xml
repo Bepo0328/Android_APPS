@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">BepoChat</string>
+    <string name="api_key">g2gtd3y5bqpm</string>
+
+    <string name="username">Username</string>
+    <string name="go">Go</string>
+    <string name="chat_app">Chat App</string>
+    <string name="reliable_and_fast">Reliable and Fast</string>
+    <string name="first_name">First Name</string>
+    <string name="Search">Search</string>
+    <string name="log_out">Log Out</string>
+    <string name="settings">Settings</string>
+    <string name="groups">Groups</string>
+    <string name="channels">Channels</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="users">users</string>
+
+
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".essential_android.FragmentActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="안녕하세요"
+        android:textSize="50sp" />
+
+<!--    <fragment-->
+<!--        android:id="@+id/fragmentOne"-->
+<!--        android:name="kr.co.bepo.myapplication.Android.FragmentOne"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="300dp" />-->
+
+    <Button
+        android:id="@+id/showButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/lightGray"
+        android:textColor="@color/black"
+        android:text="나와라 !" />
+
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/lightGray"
+        android:textColor="@color/black"
+        android:text="사라져 !" />
+
+    <LinearLayout
+        android:id="@+id/containerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#673AB7"
+        android:orientation="vertical" />
+
+</LinearLayout>

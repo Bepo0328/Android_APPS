@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Android Online</string>
+
+    <string name="my_tube">Mytube</string>
+
+    <string name="clear_expression">계산기록 삭제</string>
+    <string name="close">닫기</string>
+    <string name="user">사용자</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="password_check">Password Check</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up_page">Sign Up Page</string>
+
+    <!-- menu -->
+    <string name="menu_home">홈</string>
+    <string name="menu_user">유저</string>
+    <string name="menu_upload">업로드</string>
+    <string name="menu_info">정보</string>
+    <string name="logout">로그아웃</string>
+    <string name="input_text">내용을 작성해주세요</string>
+    <string name="select_picture">사진 선택</string>
+    <string name="upload">업로드</string>
+
+</resources>

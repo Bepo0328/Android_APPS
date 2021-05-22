@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="kr.co.bepo.firebasebepochat.ui.login.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main">
+
+        <action
+            android:id="@+id/action_mainFragment_to_loginFragment"
+            app:destination="@+id/loginFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:popUpTo="@id/mainFragment"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_mainFragment_to_RegisterFragment"
+            app:destination="@id/registerFragment"
+            app:enterAnim="@anim/from_bottom"
+            app:exitAnim="@anim/to_top"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/from_top"
+            app:popExitAnim="@anim/to_bottom"
+            app:popUpTo="@id/mainFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="kr.co.bepo.firebasebepochat.ui.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/action_loginFragment_to_RegisterFragment"
+            app:destination="@id/registerFragment"
+            app:enterAnim="@anim/from_bottom"
+            app:exitAnim="@anim/to_top"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/from_top"
+            app:popExitAnim="@anim/to_bottom"
+            app:popUpTo="@id/loginFragment" />
+
+        <action
+            android:id="@+id/action_loginFragment_to_HomeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="kr.co.bepo.firebasebepochat.ui.register.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="kr.co.bepo.firebasebepochat.ui.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/chatListFragment"
+        android:name="kr.co.bepo.firebasebepochat.ui.chat.ChatListFragment"
+        android:label="fragment_chat_list"
+        tools:layout="@layout/fragment_chat_list" />
+
+    <fragment
+        android:id="@+id/moreFragment"
+        android:name="kr.co.bepo.firebasebepochat.ui.more.MoreFragment"
+        android:label="fragment_more"
+        tools:layout="@layout/fragment_more" />
+
+</navigation>

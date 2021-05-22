@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/redView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@id/yellowView"
+        android:layout_toStartOf="@id/greenView"
+        android:background="#DD1D1D" />
+
+    <View
+        android:id="@+id/greenView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@id/purpleView"
+        android:layout_centerHorizontal="true"
+        android:background="#4CAF50" />
+
+    <View
+        android:id="@+id/orangeView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@id/blueView"
+        android:layout_toEndOf="@id/greenView"
+        android:background="#FF9800" />
+
+    <View
+        android:id="@+id/yellowView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@id/purpleView"
+        android:background="#FFEB3B" />
+
+    <View
+        android:id="@+id/purpleView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:background="#673AB7" />
+
+    <View
+        android:id="@+id/blueView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/purpleView"
+        android:background="#03A9F4" />
+
+    <View
+        android:id="@+id/pinkView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/yellowView"
+        android:layout_toStartOf="@id/melonView"
+        android:background="#E91E63" />
+
+    <View
+        android:id="@+id/melonView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/purpleView"
+        android:layout_centerHorizontal="true"
+        android:background="#CDDC39" />
+
+    <View
+        android:id="@+id/blackView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/blueView"
+        android:layout_toEndOf="@id/melonView"
+        android:background="#000000" />
+
+</RelativeLayout>

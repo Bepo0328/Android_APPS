@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="kr.co.bepo.androidonline">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".MasterApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Apple.AppleActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Mytube.MytubeDetailActivity" />
+        <activity android:name=".Mytube.MytubeActivity" />
+        <activity android:name=".Outstagram.UploadActivity" />
+        <activity android:name=".Outstagram.MyPostActivity" />
+        <activity android:name=".Outstagram.UserInfoActivity" />
+        <activity android:name=".Outstagram.PostListActivity" />
+        <activity android:name=".Outstagram.LoginActivity" />
+        <activity android:name=".Outstagram.EmailSignUpActivity" />
+        <activity android:name=".essential_android.RetrofitActivity" />
+        <activity android:name=".essential_android.NetworkActivity" />
+        <activity android:name=".essential_android.AsyncActivity" />
+        <activity android:name=".essential_android.RealmActivity" />
+        <activity android:name=".essential_android.SharedPreferenceActivity" />
+        <activity android:name=".essential_android.TabPager2Activity" />
+        <activity android:name=".essential_android.TabPagerActivity" />
+        <activity android:name=".essential_android.PhoneBookDetailActivity" />
+        <activity android:name=".essential_android.RecyclerViewActivity" />
+        <activity android:name=".essential_android.FragmentActivity" />
+        <activity android:name=".essential_android.OpenInternet" />
+        <activity android:name=".essential_android.Intent2" />
+        <activity android:name=".essential_android.Intent1" />
+        <activity android:name=".essential_android.Calculator2" />
+        <activity android:name=".essential_android.CalcuatorActivity" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

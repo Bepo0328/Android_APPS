@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".essential_android.RealmActivity">
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:backgroundTint="@color/lightGray"
+        android:layout_margin="5dp"
+        android:text="저장"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/loadButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:backgroundTint="@color/lightGray"
+        android:layout_margin="5dp"
+        android:text="불러오기"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:backgroundTint="@color/lightGray"
+        android:layout_margin="5dp"
+        android:text="삭제"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+        android:textSize="20sp" />
+
+</LinearLayout>
