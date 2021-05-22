@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Youtube</string>
+
+    <!--  activity_main  -->
+    <string name="youtube_image_view">Youtube Image View</string>
+
+    <!--  fragment_player  -->
+    <string name="player_control_button">Player Control Button</string>
+
+    <!--  menu_bottom_nav  -->
+    <string name="home">홈</string>
+
+    <!--  item_video  -->
+    <string name="logo_image_view">Logo Image View</string>
+    <string name="thumbnail_image_view">Thumbnail Image View</string>
+</resources>
