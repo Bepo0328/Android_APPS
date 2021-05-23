@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Melon</string>
+
+    <!--  fragment_player.xml  -->
+    <string name="cover_image_view">Cover Image View</string>
+    <string name="play_control_image_view">Play Control Image View</string>
+    <string name="skip_next_image_view">Skip Next Image View</string>
+    <string name="skip_prev_image_view">Skip Prev Image View</string>
+    <string name="playlist_image_view">Playlist Image View</string>
+    <string name="playlist">재생목록</string>
+</resources>
