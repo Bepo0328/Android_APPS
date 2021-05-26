@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">OTTApp</string>
+
+    <!--  activity_main.xml  -->
+    <string name="use_two_weeks">2주 무료 이용</string>
+    <string name="watching">Watching</string>
+    <string name="login">로그인</string>
+    <string name="introduce_contents_title_text">영화, 드라마, 예능 등 8만 편의 작품</string>
+    <!--  Content Description  -->
+    <string name="tv_image_view">Tv Image View</string>
+    <string name="laptop_image_view">Laptop Image View</string>
+    <string name="tablet_image_view">Tablet Image View</string>
+    <string name="phone_image_view">Phone Image View</string>
+    <string name="intro_image_view">Intro Image View</string>
+    <string name="gathering_digital_things_background_image_view">Gathering Digital Things Background Image View</string>
+
+    <!--  layout_intro_title.xml  -->
+    <string name="intro_title_text">지금 무료로\n무제한 감상 시작</string>
+    <string name="gathering_digital_things_title_text">다양한 디바이스에서\n자유롭게 감상</string>
+    <string name="gathering_digital_things_content_text">PC, 태블릿, 펀, 크롬캐스트, TV\n어디서나 최고의 화질로</string>
+    <string name="curation_title_text">5억개 평가 데이터 기반\n정확한 추천</string>
+    <string name="curation_content_text">취향에 안 맞는 작품에\n두 시간을 낭비할 순 없으니까</string>
+
+</resources>
