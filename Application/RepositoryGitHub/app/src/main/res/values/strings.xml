@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Repository GitHub</string>
+
+    <!--  activity_sign_in.xml  -->
+    <string name="github_login">GitHub Login</string>
+    <string name="loading">로딩 중...</string>
+
+    <!--  activity_search.xml  -->
+    <string name="search">검색</string>
+    <string name="please_input_search_keyword">검색어를 입력해주세요.</string>
+    <string name="empty_result_text">검색 결과가 없습니다.</string>
+
+    <!--  contentDescription  -->
+    <string name="logo_image_view">Logo Image View</string>
+    <string name="search_button">Search Button</string>
+    <string name="owner_profile_image_view">Owner Profile Image View</string>
+    <string name="like_button">Like Button</string>
+
+    <!--  activity_repository.xml  -->
+    <string name="description">설명</string>
+    <string name="update_time">업데이트 시간</string>
+
+    <!--  activity_main.xml  -->
+    <string name="empty_history_text">찜한 레포지토리가 없습니다.</string>
+
+</resources>
