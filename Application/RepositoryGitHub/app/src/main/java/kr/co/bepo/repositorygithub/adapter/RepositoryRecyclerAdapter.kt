@@ -8,7 +8,7 @@ import kr.co.bepo.repositorygithub.data.entity.GithubRepoEntity
 import kr.co.bepo.repositorygithub.databinding.ViewholderRepositoryItemBinding
 import kr.co.bepo.repositorygithub.extensions.loadCenterInside
 
-class RepositoryRecyclerAdapter: RecyclerView.Adapter<RepositoryRecyclerAdapter.RepositoryItemViewHolder>() {
+class RepositoryRecyclerAdapter : RecyclerView.Adapter<RepositoryRecyclerAdapter.RepositoryItemViewHolder>() {
 
     private var repositoryList: List<GithubRepoEntity> = listOf()
     private lateinit var repositoryClickListener: (GithubRepoEntity) -> Unit
@@ -16,7 +16,7 @@ class RepositoryRecyclerAdapter: RecyclerView.Adapter<RepositoryRecyclerAdapter.
     inner class RepositoryItemViewHolder(
         private val binding: ViewholderRepositoryItemBinding,
         val searchResultClickListener: (GithubRepoEntity) -> Unit
-    ): RecyclerView.ViewHolder(binding.root) {
+    ) : RecyclerView.ViewHolder(binding.root) {
         fun bindData(data: GithubRepoEntity) = with(binding) {
             ownerProfileImageView.loadCenterInside(data.owner.avatarUrl, 24f)
             ownerNameTextView.text = data.owner.login

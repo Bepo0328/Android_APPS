@@ -8,7 +8,11 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.view.isGone
 import androidx.core.view.isVisible
-import kotlinx.coroutines.*
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.Job
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 import kr.co.bepo.repositorygithub.data.database.DatabaseProvider
 import kr.co.bepo.repositorygithub.data.entity.GithubRepoEntity
 import kr.co.bepo.repositorygithub.databinding.ActivityRepositoryBinding
@@ -78,7 +82,6 @@ class RepositoryActivity : AppCompatActivity(), CoroutineScope {
                         repositoryEntity = repo
                     }
                 }
-
             }
             repositoryEntity
         }

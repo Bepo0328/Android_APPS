@@ -8,7 +8,11 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.browser.customtabs.CustomTabsIntent
 import androidx.core.view.isVisible
-import kotlinx.coroutines.*
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.Job
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 import kr.co.bepo.repositorygithub.databinding.ActivitySignInBinding
 import kr.co.bepo.repositorygithub.utility.AuthTokenProvider
 import kr.co.bepo.repositorygithub.utility.RetrofitUtil
@@ -38,11 +42,12 @@ class SignInActivity : AppCompatActivity(), CoroutineScope {
     private fun checkAuthCodeExist(): Boolean = authTokenProvider.token.isNullOrEmpty().not()
 
     private fun launchMainActivity() {
-        startActivity(Intent(this, MainActivity::class.java).apply {
-            addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
-            addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-        })
-
+        startActivity(
+            Intent(this, MainActivity::class.java).apply {
+                addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
+                addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+            }
+        )
     }
 
     private fun initViews() = with(binding) {
@@ -112,5 +117,4 @@ class SignInActivity : AppCompatActivity(), CoroutineScope {
             launchMainActivity()
         }
     }
-
 }

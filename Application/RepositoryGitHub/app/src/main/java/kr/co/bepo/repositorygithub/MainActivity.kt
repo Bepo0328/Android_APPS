@@ -4,12 +4,15 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isVisible
-import kotlinx.coroutines.*
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.Job
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 import kr.co.bepo.repositorygithub.adapter.RepositoryRecyclerAdapter
 import kr.co.bepo.repositorygithub.data.database.DatabaseProvider
 import kr.co.bepo.repositorygithub.data.entity.GithubRepoEntity
 import kr.co.bepo.repositorygithub.databinding.ActivityMainBinding
-import java.util.*
 import kotlin.coroutines.CoroutineContext
 
 class MainActivity : AppCompatActivity(), CoroutineScope {
@@ -72,7 +75,8 @@ class MainActivity : AppCompatActivity(), CoroutineScope {
                     Intent(this@MainActivity, RepositoryActivity::class.java).apply {
                         putExtra(RepositoryActivity.REPOSITORY_OWNER_KEY, it.owner.login)
                         putExtra(RepositoryActivity.REPOSITORY_NAME_KEY, it.name)
-                    })
+                    }
+                )
             }
         }
     }

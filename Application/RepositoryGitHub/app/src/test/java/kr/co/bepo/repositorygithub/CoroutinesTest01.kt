@@ -28,12 +28,12 @@ class CoroutinesTest01 {
         println("measure time: $time")
     }
 
-    suspend fun getFirstName(): String {
+    private suspend fun getFirstName(): String {
         delay(1000)
         return "이"
     }
 
-    suspend fun getLastName(): String {
+    private suspend fun getLastName(): String {
         delay(1000)
         return "기정"
     }

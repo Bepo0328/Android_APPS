@@ -3,11 +3,14 @@ package kr.co.bepo.repositorygithub
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isGone
 import androidx.core.view.isVisible
-import kotlinx.coroutines.*
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.Job
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 import kr.co.bepo.repositorygithub.adapter.RepositoryRecyclerAdapter
 import kr.co.bepo.repositorygithub.data.entity.GithubRepoEntity
 import kr.co.bepo.repositorygithub.databinding.ActivitySearchBinding
@@ -35,7 +38,6 @@ class SearchActivity : AppCompatActivity(), CoroutineScope {
 
     private fun initAdapter() {
         adapter = RepositoryRecyclerAdapter()
-
     }
 
     private fun initViews() = with(binding) {
@@ -73,13 +75,14 @@ class SearchActivity : AppCompatActivity(), CoroutineScope {
             emptyResultTextView.isVisible = false
             recyclerView.isVisible = true
             adapter.setSearchResultList(githubRepoList) {
-                startActivity(Intent(this@SearchActivity, RepositoryActivity::class.java).apply {
-                    putExtra(RepositoryActivity.REPOSITORY_OWNER_KEY, it.owner.login)
-                    putExtra(RepositoryActivity.REPOSITORY_NAME_KEY, it.name)
-                })
+                startActivity(
+                    Intent(this@SearchActivity, RepositoryActivity::class.java).apply {
+                        putExtra(RepositoryActivity.REPOSITORY_OWNER_KEY, it.owner.login)
+                        putExtra(RepositoryActivity.REPOSITORY_NAME_KEY, it.name)
+                    }
+                )
             }
         }
-
     }
 
     private fun showLoading(isShown: Boolean) = with(binding) {

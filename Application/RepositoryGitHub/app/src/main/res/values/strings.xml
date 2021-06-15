@@ -3,7 +3,7 @@
 
     <!--  activity_sign_in.xml  -->
     <string name="github_login">GitHub Login</string>
-    <string name="loading">로딩 중...</string>
+    <string name="loading">로딩 중…</string>
 
     <!--  activity_search.xml  -->
     <string name="search">검색</string>
