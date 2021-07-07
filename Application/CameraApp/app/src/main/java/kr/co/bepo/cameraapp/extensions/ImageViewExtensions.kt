@@ -1,4 +1,4 @@
-package kr.co.bepo.shoppingapp.extensions
+package kr.co.bepo.cameraapp.extensions
 
 import android.widget.ImageView
 import com.bumptech.glide.Glide
@@ -19,18 +19,7 @@ internal fun ImageView.loadCenterCrop(url: String, corner: Float = 0f) {
         .diskCacheStrategy(DiskCacheStrategy.ALL)
         .apply {
             if (corner > 0) transforms(CenterCrop(), RoundedCorners(corner.fromDpToPx()))
-
         }
         .into(this)
 }
 
-internal fun ImageView.load(url: String, corner: Float = 0f) {
-    Glide.with(this)
-        .load(url)
-        .transition(DrawableTransitionOptions.withCrossFade(factory))
-        .diskCacheStrategy(DiskCacheStrategy.ALL)
-        .apply {
-            if (corner > 0) transforms(RoundedCorners(corner.fromDpToPx()))
-        }
-        .into(this)
-}
